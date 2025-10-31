@@ -224,6 +224,7 @@ class _UserPageState extends State<UserPage> {
                   child: UserTile(
                     user: user,
                     onTap: () {
+
                     },
                   ),
                 );
