@@ -157,7 +157,7 @@ This separation makes the app:
 
 ## 📸 Screenshots (To Add Later)
 
-<table> <tr> <th>User List</th> <th>User Details</th> </tr> <tr> <td><img src="screenshots/user_list.png" width="120" alt="User List"></td> <td><img src="screenshots/user_detail.png" width="250" alt="User Details"></td> </tr> </table>
+<table> <tr> <th>User List</th> <th>User Details</th> </tr> <tr> <td><img src="screenshots/user_list.png" width="150" alt="User List"></td> <td><img src="screenshots/user_detail.png" width="250" alt="User Details"></td> </tr> </table>
 
 ---
 
