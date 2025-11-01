@@ -167,3 +167,4 @@ This separation makes the app:
 Flutter Developer @ Hi-Tech Bangla
 📍 Bangladesh  
 🔗 [GitHub](https://github.com/mowlashuvo)
+✉️ [Email](mowlashuvo2@gmail.com)
