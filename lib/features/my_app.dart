@@ -55,6 +55,22 @@ class _MyAppState extends State<MyApp> {
         path: UserPage.route,
         pageBuilder: (context, state) => buildPage(UserPage(), state),
       ),
+      GoRoute(
+        path: '${UserPage.route}/:id',
+        name: UserDetailPage.route,
+        pageBuilder: (context, state) {
+          final user = state.extra as UserDataEntity?;
+          final userId = state.pathParameters['id']!;
+          if (user == null) {
+            return MaterialPage(
+              child: const Scaffold(
+                body: Center(child: Text('User not found')),
+              ),
+            );
+          }
+          return buildPage(UserDetailPage(id: userId, user: user,), state);
+        },
+      ),
     ],
   );
 }

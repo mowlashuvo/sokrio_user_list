@@ -86,15 +86,6 @@ class _UserPageState extends State<UserPage> {
           centerTitle: false,
           elevation: 0,
           backgroundColor: Colors.transparent,
-          actions: [
-            IconButton(
-              icon: Icon(Icons.refresh, color: theme.colorScheme.primary),
-              onPressed: () {
-                context.read<UserBloc>().add(const UserEvent.refresh());
-              },
-              tooltip: 'Refresh',
-            ),
-          ],
         ),
         body: BlocListener<UserBloc, UserState>(
           listenWhen: (previous, current) =>
@@ -223,9 +214,7 @@ class _UserPageState extends State<UserPage> {
                   margin: EdgeInsets.only(bottom: 8.h),
                   child: UserTile(
                     user: user,
-                    onTap: () {
-
-                    },
+                    onTap: () => context.push('${UserPage.route}/${user.id}', extra: user),
                   ),
                 );
               },
